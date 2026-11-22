@@ -1,0 +1,30 @@
+[h1]F5 Save / F8 Load[/h1]
+Save your character, inventory and world. Silent operation with automatic Continue after saving or loading.
+
+[h2]Install: copy locally, then enable[/h2]
+[b]The Workshop copy cannot run directly. Unsafe mods must be allowed.[/b]
+
+1. Subscribe, then find Steam/steamapps/workshop/content/881100/[b]3835902155[/b].
+
+2. In your Steam Library, open Noita → Manage → [b]Browse local files[/b].
+[img]https://images.steamusercontent.com/ugc/10805256911068528732/E7FF39A4BC811219C94EBFEDA523B254922C90F3/[/img]
+
+3. Open the [b]mods[/b] folder in the game installation directory.
+[img]https://images.steamusercontent.com/ugc/12677399558353622808/6F7FAA63A9C71723A48AA0A397355AC3C6BA56E4/[/img]
+
+4. Copy the entire [b]3835902155[/b] folder here. The final path must be [b]Noita/mods/3835902155/mod.xml[/b].
+[img]https://images.steamusercontent.com/ugc/17467461613422368573/458C16D60D9281D3E4827B52FFEE9C723DA34FBF/[/img]
+
+5. In Noita, allow unsafe mods, enable the [b]local copy[/b] and disable the Workshop copy. Restart when prompted.
+
+After that, launch the game normally. The helper starts automatically; no Steam Launch Options are needed.
+To update, quit the game and copy the updated folder again.
+
+[h2]Controls[/h2]
+[b]F5[/b]: save a full-run snapshot.　[b]F8[/b]: restore the last snapshot.
+Both briefly restart Noita and automatically Continue. Hotkeys only work while Noita is in the foreground.
+Windows 10/11, standard save00 saves only. Automatic Continue supports the Jan 25 2025 stable build.
+See the included START_HERE.txt for details, source code and recovery instructions.
+
+[h2]Source code[/h2]
+[url=https://github.com/muxigame/noita-f5f8]GitHub repository[/url]

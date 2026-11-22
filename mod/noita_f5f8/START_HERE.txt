@@ -1,0 +1,55 @@
+F5 存档 / F8 读档 — 仅限本地不安全模组
+========================================
+
+首次安装（Windows 10/11）
+1. 订阅后找到整个工坊文件夹：
+   Steam/steamapps/workshop/content/881100/3835902155/
+2. 复制整个 3835902155 文件夹到“游戏安装目录/mods”。
+   最终目录：Noita/mods/3835902155/mod.xml
+   Steam → Noita → 管理 → 浏览本地文件，可打开游戏安装目录。
+3. 在游戏模组菜单允许“不安全模组”，启用本地副本，停用同名工坊副本。
+   按游戏提示重启，此后照常启动游戏即可。
+
+工坊来源不能执行不安全 Lua。必须复制为本地来源；只订阅无法使用。
+本地模组会验证随附二进制的 SHA256，提取到
+%LOCALAPPDATA%/NoitaF5F8/local-helper-<SHA256>.exe 并自动启动。
+无需单独打开助手、重命名二进制或配置 Steam 启动选项。
+旧版本如配置过 NoitaF5F8 的 Steam 启动选项，可以清空该选项。
+工坊更新后退出游戏，再复制覆盖整个文件夹。本地副本不会自动更新。
+
+操作
+F5：正常保存退出 → 完整快存 → 重启并自动继续。
+F8：校验快存 → 立即强停 → 恢复整个 save00 → 重启并自动继续。
+只响应处于前台的 Noita。请等待操作完成，不要手动再开一个游戏。
+首次普通启动仍显示主菜单。F5/F8 重启可能短暂显示主菜单。
+自动继续仅适配 Noita Windows 稳定版 Build Jan 25 2025；未知版本需手点继续。
+无有效快存时 F8 不关闭游戏。正常退出游戏后助手自动退出。
+
+数据与诊断
+快存/历史/日志：%LOCALAPPDATA%/NoitaF5F8/
+快存文件：quick/save00 与 quick/manifest.xml
+读档前恢复副本：存档根目录/NoitaF5F8-Recovery/
+完整恢复会回退所有 save00 进度与统计，不回退 save_shared 设置。
+仅支持正常 save00 存档。请勿同时使用其他存档管理工具。
+助手全程静默；状态与错误在托盘和 helper.log，安装错误见游戏控制台输出。
+不替换游戏 DLL，不安装服务，无需联网或管理员权限。
+companion/CompanionSource.txt 包含助手源码，companion/SHA256.txt 包含哈希。
+
+ENGLISH
+=======
+Copy the entire Workshop folder 3835902155 to your game installation's mods
+directory, producing Noita/mods/3835902155/mod.xml. Allow unsafe mods, enable
+the local copy and disable the Workshop copy. Restart when Noita asks.
+The local mod verifies and extracts the bundled Windows helper, then launches
+it automatically. No separate helper launch or Steam Launch Options needed.
+Normal game exit also closes the helper. Quit and recopy the folder to update.
+
+F5 gracefully saves a complete snapshot; F8 validates and restores it after
+stopping Noita. Both restart and automatically Continue on the supported
+Jan 25 2025 Windows stable build. Other builds require manual Continue.
+Only foreground Noita receives hotkeys. Wait for completion; don't open a
+second game. Initial normal startup retains the main menu. No toast/dialogs.
+Snapshots and logs: %LOCALAPPDATA%/NoitaF5F8/
+Recovery copies: <save root>/NoitaF5F8-Recovery/
+All save00 progress/statistics are restored; save_shared settings are kept.
+The Workshop copy cannot execute unsafe Lua and must be copied locally first.

@@ -1,0 +1,5 @@
+# Preserve checked-in source and payload bytes across platforms.
+* -text
+*.bin binary
+*.png binary
+*.bmp binary

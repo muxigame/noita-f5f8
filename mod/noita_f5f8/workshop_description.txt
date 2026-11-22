@@ -1,0 +1,30 @@
+[h1]F5 存档 / F8 读档[/h1]
+完整保存角色、背包和世界。存读档后自动继续，静默运行。
+
+[h2]安装：复制到本地，再启用[/h2]
+[b]工坊副本不能直接运行，需允许“不安全模组”。[/b]
+
+1. 订阅后，找到 Steam/steamapps/workshop/content/881100/[b]3835902155[/b]。
+
+2. Steam → Noita → 管理 → [b]浏览本地文件[/b]。
+[img]https://images.steamusercontent.com/ugc/17069529766445610212/CBE144B7A508CA548E6A3392706D14E954F55CC3/[/img]
+
+3. 打开游戏安装目录下的 [b]mods[/b]。
+[img]https://images.steamusercontent.com/ugc/18227373996331689465/3101E2C6CA6A30A32C14F91576A10349CCA6B0D6/[/img]
+
+4. 复制整个 [b]3835902155[/b] 文件夹进去，最终为 [b]Noita/mods/3835902155/mod.xml[/b]。
+[img]https://images.steamusercontent.com/ugc/17156832696559816221/176595513CCE58346C20CAFBA90B22D88B4C6576/[/img]
+
+5. 在游戏中允许不安全模组，启用[b]本地副本[/b]、停用同名工坊副本，按提示重启。
+
+此后正常启动游戏即可，助手自动运行，无需配置 Steam 启动选项。
+更新时退出游戏，再复制覆盖本地文件夹。
+
+[h2]操作[/h2]
+[b]F5[/b]：保存完整快存。　[b]F8[/b]：恢复上次快存。
+两者均会短暂重启并自动继续；仅在 Noita 位于前台时响应。
+支持 Windows 10/11、普通 save00；自动继续适配 Jan 25 2025 稳定版。
+详细说明、源码及恢复方式见随附 START_HERE.txt。
+
+[h2]源码[/h2]
+[url=https://github.com/muxigame/noita-f5f8]GitHub 源码[/url]

@@ -1,0 +1,36 @@
+# Local builds and release archives
+/dist/
+/companion/*.exe
+/companion/*.exe.config
+/companion/*.pdb
+**/bin/
+**/obj/
+
+# Runtime saves, snapshots, recovery copies and logs
+**/save00/
+**/save_shared/
+**/NoitaF5F8/
+**/NoitaF5F8-Recovery/
+/quick/
+/history/
+/staging/
+/logs/
+/backups/
+/runtime-*/
+/.deps/
+VALIDATION*.json
+*.log
+*.dmp
+*.tmp
+
+# Editor and machine-local files
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# The installable payload and its checksum are part of the source release.
+!mod/noita_f5f8/companion/NoitaF5F8.bin
+!mod/noita_f5f8/companion/SHA256.txt
